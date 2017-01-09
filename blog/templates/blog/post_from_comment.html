@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <script type="text/javascript">
+        function goReplace(str) {
+          location.replace(str);
+        }
+    </script>
+    <title>Hello HTML</title>
+  </head>
+
+  <body>
+    <form action="" method="post">
+      {{ form.as_p }}
+      {% csrf_token %}
+      <button type="submit" class="btn btn-primary">Save</button>
+      <button onclick="goReplace('/')">List</button>
+    </form>
+  </body>
+</html>
